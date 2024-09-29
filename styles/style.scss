@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif, Arial, Helvetica, sans-serif;
+}
+
+$primaryColor : #ef4123;
+$primarySecondColor: #383c47;
+
+.navbar {
+  width: 100%;
+  height: 10vh;
+  margin-bottom: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+
+  .logo {
+      margin-top: 0.5rem;
+      float: right;
+      width: 50%;
+
+  }
+}
+
+.border{
+  color: #333;
+  width: 100%;
+}
+
+.Container {
+  width: 100%;
+}
+
+
+.icon {
+  width: calc(100 / 4);
+  margin: 0.5rem;
+  padding: 0.8rem 1rem;
+  color: white;
+  background-color: $primaryColor;
+  border-radius: 5px;
+}
+
+
+.register {
+  width: calc(100 / 4);
+  margin: 1rem;
+  font-size: 1.2rem;
+
+  .login {
+      text-decoration: none;
+      color: $primaryColor;
+
+      padding: 0.5rem;
+      border: 1px solid $primaryColor;
+      border-radius: 8px;
+
+      &:hover {
+          color: white;
+          background-color: $primaryColor;
+      }
+  }
+
+  .sign-up {
+      text-decoration: none;
+      color: $primarySecondColor;
+      opacity: 0.75;
+      padding: 1rem;
+
+      &:hover {
+          opacity: 1;
+      }
+  }
+}
+
+form{
+  width: 100%;
+  height: 10vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d7d7d7;
+
+  .search{
+      border: 1px solid #d7d7d7;
+      background-color: white;
+      border-radius: 5px;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+}
+
+
+.search-input{
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.search-icon{
+  margin: 1rem;
+  color: #d7d7d7;
+  background-color: #ef4123;
+}
+
+.btn{
+  border: none;
+  background-color: $primaryColor ;
+  border-radius: 5px;
+  color: white;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.Slider{
+  margin-top: 1rem;
+  border-radius: 10px important!;
+}
+
+.items{
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.items .box{
+  width: 18rem;
+  height: 10rem;
+  margin: 10px;
+
+}
